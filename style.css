@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: 1s;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10% auto;
+    width: 40%;
+    height: 30vh;
+    background-color: rgba(10, 10, 10, 0.4);
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .formulario {
+        width: 80%;
+    }
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vh;
+    color: white;
+}
+
+input {
+    text-align: center;
+    font-size: 2.5vh;
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+button {
+    margin-top: 2%;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#criador {
+    display: inline;
+    color: black;
+}
+
+.creditos {
+    flex-direction: row;
+    box-sizing: content-box;
+    position: absolute;
+    top: 89%;
+    right: 0;
+}
+
+a {
+    padding: 20px;
+    background-image: url('imgs/github.png');
+    background-size: cover;
+    background-position: center;
+    border: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    #criador {
+        font-size: 17px;
+    }
+}
